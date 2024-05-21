@@ -42,7 +42,7 @@ const Form = () => {
         console.log('Submit button clicked');
         setFormError(null);
         if (!selectedVariant || !selectedTimeslot) {
-            const errorMessage = "Please select a variant and a timeslot.";
+            const errorMessage = "Please select a timeslot.";
             setFormError(errorMessage);
             toast.error(errorMessage);
             return false;
