@@ -4,7 +4,7 @@ import axios from 'axios';
 export const fetchTimeslots = createAsyncThunk(
   'timeslot/fetchTimeslots',
   async () => {
-    const response = await axios.get(process.env.API_ENDPOINT);
+    const response = await axios.get('https://app.appointo.me/scripttag/mock_timeslots');
     return response.data;
   }
 );
